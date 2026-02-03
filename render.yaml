@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: corporate-ai-david
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8527939205:AAFWI1EtRA2IAyYnsCnvnFeln0-G4xSvBxY
+      - key: NODE_ENV
+        value: production
+    plan: free
